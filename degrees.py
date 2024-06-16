@@ -84,13 +84,10 @@ def main():
             print(f"{i + 1}: {person1} and {person2} starred in {movie}")
 
 
+
+
 def shortest_path(source, target):
-    #source is person's name, target is the end of the path
-    #ex Jennifer Lawrence -> Tom Hanks  == 2
-
-    #neighbors_for_person function, which accepts a person’s id as input, and returns a set of (movie_id, person_id) pairs for all people who starred in a movie with a given person.
-
-    #where state = actor id, parent = parent node, action = movie id
+    #where state = actor id, parent = parent node, action = movie id vvvc
     startNode = Node(state=source,parent=None, action=None)
     frontier = QueueFrontier()
     frontier.add(startNode)
